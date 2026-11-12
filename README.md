@@ -1,75 +1,154 @@
-# React + TypeScript + Vite
+# CloudOpsForge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Cloud Infrastructure & Operations Platform
 
-Currently, two official plugins are available:
+Build. Automate. Monitor. Optimize.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+CloudOpsForge is a cloud operations platform designed to demonstrate AWS infrastructure provisioning, automation, monitoring concepts, and DevOps practices through an interactive dashboard.
 
-## React Compiler
+## Dashboard Preview
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![CloudOpsForge Dashboard](public/dashboard.png)
 
-## Expanding the ESLint configuration
+## Architecture
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```text
+Developer
+    |
+    v
+  GitHub
+    |
+    v
+Bash Automation Scripts
+    |
+    v
+  Terraform
+    |
+    v
+ AWS Infrastructure
+    |
+    v
+CloudWatch + SNS
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Key Features
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Interactive cloud operations dashboard with sample metrics.
+- AWS infrastructure configuration using Terraform.
+- VPC, public subnet, Internet Gateway, security group and EC2 configuration.
+- Private S3 bucket configuration.
+- Bash scripts for deployment, monitoring and cost reporting.
+- GitHub Actions workflow for automated application builds and Terraform validation.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Technology Stack
 
+| Technology | Purpose |
+|---|---|
+| React + TypeScript | Frontend dashboard |
+| Tailwind CSS | User interface styling |
+| AWS | Target cloud platform |
+| Terraform | Infrastructure as Code |
+| Bash | Automation scripts |
+| GitHub Actions | Continuous Integration |
+
+## Project Structure
+
+```text
+CloudOpsForge/
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── public/
+├── scripts/
+│   ├── deploy.sh
+│   ├── monitor.sh
+│   ├── cost-report.sh
+│   └── destroy.sh
+├── src/
+│   ├── components/
+│   ├── data/
+│   ├── pages/
+│   └── types/
+├── terraform/
+│   ├── provider.tf
+│   ├── variables.tf
+│   ├── vpc.tf
+│   ├── internet.tf
+│   ├── security.tf
+│   ├── ec2.tf
+│   ├── s3.tf
+│   └── outputs.tf
+└── README.md
 ```
+
+## Run Locally
+
+### Prerequisites
+
+- Node.js
+- npm
+- Git
+
+### Installation
+
+```bash
+git clone https://github.com/Tamilmani99/CloudOpsForge.git
+cd CloudOpsForge
+npm install
+npm run dev
+```
+
+Open the local URL displayed in your terminal.
+
+### Build
+
+```bash
+npm run build
+```
+
+## Terraform Validation
+
+Terraform configuration is available in the `terraform/` directory.
+
+```bash
+cd terraform
+terraform init
+terraform fmt
+terraform validate
+```
+
+An AWS account and valid AWS credentials are required for planning or deploying AWS resources.
+
+## CI Pipeline
+
+GitHub Actions automatically:
+
+- Installs frontend dependencies.
+- Builds the React application.
+- Checks Terraform formatting.
+- Validates Terraform configuration.
+
+## Current Project Status
+
+- Frontend dashboard: Implemented with sample data.
+- Terraform configuration: Written and validated.
+- Bash automation scripts: Created.
+- GitHub Actions CI: Passing.
+- AWS infrastructure: Not yet deployed.
+- Live AWS monitoring: Planned.
+
+**Note:** This project currently uses demonstration metrics. The deployment interface is a frontend simulation; no AWS infrastructure has been created yet.
+
+## Future Improvements
+
+- Deploy infrastructure into AWS.
+- Integrate CloudWatch monitoring and SNS alerts.
+- Connect real infrastructure metrics.
+- Implement secure automated deployment.
+- Publish the frontend using GitHub Pages.
+
+## Author
+
+**Tamilmani**
+
+GitHub: [Tamilmani99](https://github.com/Tamilmani99)
