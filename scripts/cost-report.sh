@@ -3,7 +3,7 @@
 set -e
 
 echo "================================="
-echo " CloudOps Lite Cost Report"
+echo " CloudOpsForge Cost Report"
 echo "================================="
 
 echo ""

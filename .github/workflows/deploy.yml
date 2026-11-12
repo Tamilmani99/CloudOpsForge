@@ -1,5 +1,5 @@
 
-name: Deploy CloudOps Lite to GitHub Pages
+name: Deploy CloudOpsForge to GitHub Pages
 
 on:
   push:

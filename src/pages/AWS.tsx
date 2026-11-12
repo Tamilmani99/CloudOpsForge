@@ -61,7 +61,7 @@ export function AWS() {
         </h1>
 
         <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-          AWS services planned for the CloudOps Lite infrastructure,
+          AWS services planned for the CloudOpsForge infrastructure,
           monitoring and deployment workflow.
         </p>
       </div>
@@ -154,7 +154,7 @@ export function AWS() {
       </div>
 
       <p className="mt-8 text-center text-xs text-slate-400">
-        CloudOps Lite · AWS service overview · Demo environment
+        CloudOpsForge · AWS service overview · Demo environment
       </p>
 
     </main>

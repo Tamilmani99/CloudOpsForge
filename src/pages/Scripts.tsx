@@ -10,7 +10,7 @@ import {
 const scripts = [
   {
     name: "deploy.sh",
-    description: "Deploy CloudOps Lite infrastructure using Terraform.",
+    description: "Deploy CloudOpsForge infrastructure using Terraform.",
     command: "./deploy.sh",
     icon: Terminal,
   },
@@ -166,7 +166,7 @@ export function Scripts() {
       </div>
 
       <p className="mt-8 text-center text-xs text-slate-400">
-        CloudOps Lite · Automation scripts · Demo environment
+        CloudOpsForge · Automation scripts · Demo environment
       </p>
 
     </main>

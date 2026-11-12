@@ -104,7 +104,7 @@ export function Console() {
       </div>
 
       <p className="mt-8 text-center text-xs text-slate-400">
-        CloudOps Lite · Sample dashboard data · Not connected to AWS yet
+        CloudOpsForge · Sample dashboard data · Not connected to AWS yet
       </p>
 
     </main>

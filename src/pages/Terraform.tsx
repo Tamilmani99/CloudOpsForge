@@ -56,7 +56,7 @@ export function Terraform() {
 
         <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
           Infrastructure as Code modules used to define and manage
-          CloudOps Lite AWS resources.
+          CloudOpsForge AWS resources.
         </p>
       </div>
 
@@ -74,7 +74,7 @@ export function Terraform() {
             </h2>
 
             <p className="mt-2 text-sm leading-6 text-slate-300">
-              CloudOps Lite uses Terraform to define AWS infrastructure
+              CloudOpsForge uses Terraform to define AWS infrastructure
               consistently and reproducibly.
             </p>
           </div>
@@ -163,7 +163,7 @@ export function Terraform() {
       </div>
 
       <p className="mt-8 text-center text-xs text-slate-400">
-        CloudOps Lite · Terraform configuration · Demo environment
+        CloudOpsForge · Terraform configuration · Demo environment
       </p>
 
     </main>

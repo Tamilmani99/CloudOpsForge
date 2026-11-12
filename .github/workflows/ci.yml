@@ -1,4 +1,4 @@
-name: CloudOps Lite CI
+name: CloudOpsForge CI
 
 on:
   push:

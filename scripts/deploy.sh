@@ -3,7 +3,7 @@
 set -e
 
 echo "================================="
-echo " CloudOps Lite Deployment"
+echo " CloudOpsForge Deployment"
 echo "================================="
 
 echo ""

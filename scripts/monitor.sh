@@ -3,7 +3,7 @@
 set -e
 
 echo "================================="
-echo " CloudOps Lite Monitoring"
+echo " CloudOpsForge Monitoring"
 echo "================================="
 
 echo ""

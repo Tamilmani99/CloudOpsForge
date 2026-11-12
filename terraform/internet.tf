@@ -2,8 +2,8 @@ resource "aws_internet_gateway" "main" {
   vpc_id = aws_vpc.main.id
 
   tags = {
-    Name    = "cloudops-lite-igw"
-    Project = "CloudOps-Lite"
+    Name    = "cloudOps-forge-igw"
+    Project = "CloudOps-Forge"
   }
 }
 
@@ -16,8 +16,8 @@ resource "aws_route_table" "public" {
   }
 
   tags = {
-    Name    = "cloudops-lite-public-route-table"
-    Project = "CloudOps-Lite"
+    Name    = "cloudOps-forge-public-route-table"
+    Project = "CloudOps-Forge"
   }
 }
 

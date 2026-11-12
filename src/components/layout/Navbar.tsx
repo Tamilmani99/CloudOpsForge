@@ -33,7 +33,7 @@ export function Navbar({
           </div>
 
           <span className="text-lg font-bold tracking-tight text-slate-900">
-            CloudOps <span className="text-emerald-600">Lite</span>
+          CloudOps <span className="text-emerald-600">Forge</span> 
           </span>
         </button>
 

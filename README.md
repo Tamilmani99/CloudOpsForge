@@ -8,11 +8,11 @@ CloudOpsForge is a cloud operations platform designed to demonstrate AWS infrast
 
 ## Dashboard Preview
 
-![CloudOpsForge Dashboard](public/dashboard.png)  
+  
 
 ## Architecture
 
-![CloudOps Lite AWS Architecture](public/architecture.png)
+![CloudOpsForge AWS Architecture](public/architecture.png)
 
 ```text
 Developer
@@ -35,12 +35,16 @@ CloudWatch + SNS
 
 ## Key Features
 
-- Interactive cloud operations dashboard with sample metrics.
-- AWS infrastructure configuration using Terraform.
-- VPC, public subnet, Internet Gateway, security group and EC2 configuration.
-- Private S3 bucket configuration.
-- Bash scripts for deployment, monitoring and cost reporting.
-- GitHub Actions workflow for automated application builds and Terraform validation.
+## Key Features
+
+- **Interactive Dashboard:** Visual overview of cloud operations with sample infrastructure metrics.
+- **AWS Infrastructure as Code:** Terraform configuration for provisioning AWS resources.
+- **Network Architecture:** VPC, public subnet, Internet Gateway, security groups, and EC2 configuration.
+- **Secure Storage:** Private Amazon S3 bucket configuration.
+- **Bash Automation:** Scripts for deployment, infrastructure monitoring, cost reporting, and resource cleanup.
+- **Continuous Integration:** GitHub Actions workflow for automated frontend builds and Terraform validation.
+- **Infrastructure Documentation:** Architecture diagrams, project structure, and deployment guidance.
+- **Cost Awareness:** Demonstration of cloud cost reporting and infrastructure management concepts.
 
 ## Technology Stack
 

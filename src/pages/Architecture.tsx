@@ -51,7 +51,7 @@ export function Architecture() {
         </span>
 
         <h1 className="mt-2 text-3xl font-bold tracking-tight text-slate-900">
-          CloudOps Lite Architecture
+          CloudOpsForge Architecture
         </h1>
 
         <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
@@ -146,7 +146,7 @@ export function Architecture() {
 
       {/* Demo Notice */}
       <p className="mt-8 text-center text-xs text-slate-400">
-        CloudOps Lite · Architecture overview · Demo environment
+        CloudOpsForge · Architecture overview · Demo environment
       </p>
 
     </main>

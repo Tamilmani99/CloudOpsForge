@@ -1,6 +1,6 @@
 resource "aws_security_group" "web" {
-  name        = "cloudops-lite-web-sg"
-  description = "Security group for CloudOps Lite web server"
+  name        = "cloudOps-forge-web-sg"
+  description = "Security group for CloudOpsForge web server"
   vpc_id      = aws_vpc.main.id
 
   ingress {
@@ -27,7 +27,7 @@ resource "aws_security_group" "web" {
   }
 
   tags = {
-    Name    = "cloudops-lite-web-sg"
-    Project = "CloudOps-Lite"
+    Name    = "cloudOps-forge-web-sg"
+    Project = "CloudOps-Forge"
   }
 }

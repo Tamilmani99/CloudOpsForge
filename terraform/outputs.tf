@@ -1,5 +1,5 @@
 output "vpc_id" {
-  description = "ID of the CloudOps Lite VPC"
+  description = "ID of the CloudOpsForge VPC"
   value       = aws_vpc.main.id
 }
 

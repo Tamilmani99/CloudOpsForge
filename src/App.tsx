@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 import { Navbar } from "./components/layout/Navbar";
 
@@ -13,27 +13,96 @@ import { Roadmap } from "./pages/Roadmap";
 function App() {
   const [activePage, setActivePage] = useState("Console");
 
+  const consoleRef = useRef<HTMLDivElement>(null);
+  const architectureRef = useRef<HTMLDivElement>(null);
+  const awsRef = useRef<HTMLDivElement>(null);
+  const terraformRef = useRef<HTMLDivElement>(null);
+  const scriptsRef = useRef<HTMLDivElement>(null);
+  const deployRef = useRef<HTMLDivElement>(null);
+  const roadmapRef = useRef<HTMLDivElement>(null);
+
+  const sections = {
+    Console: consoleRef,
+    Architecture: architectureRef,
+    AWS: awsRef,
+    Terraform: terraformRef,
+    Scripts: scriptsRef,
+    Deploy: deployRef,
+    Roadmap: roadmapRef,
+  };
+
+  const handleNavigate = (page: string) => {
+    setActivePage(page);
+
+    sections[page as keyof typeof sections]?.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
+
   return (
     <div className="min-h-screen bg-slate-50">
 
       <Navbar
         activePage={activePage}
-        onNavigate={setActivePage}
+        onNavigate={handleNavigate}
       />
 
-      {activePage === "Console" && <Console />}
+      <section
+        ref={consoleRef}
+        id="console"
+        className="scroll-mt-24"
+      >
+        <Console />
+      </section>
 
-      {activePage === "Architecture" && <Architecture />}
+      <section
+        ref={architectureRef}
+        id="architecture"
+        className="scroll-mt-24"
+      >
+        <Architecture />
+      </section>
 
-      {activePage === "AWS" && <AWS />}
+      <section
+        ref={awsRef}
+        id="aws"
+        className="scroll-mt-24"
+      >
+        <AWS />
+      </section>
 
-      {activePage === "Terraform" && <Terraform />}
+      <section
+        ref={terraformRef}
+        id="terraform"
+        className="scroll-mt-24"
+      >
+        <Terraform />
+      </section>
 
-      {activePage === "Scripts" && <Scripts />}
+      <section
+        ref={scriptsRef}
+        id="scripts"
+        className="scroll-mt-24"
+      >
+        <Scripts />
+      </section>
 
-      {activePage === "Deploy" && <Deploy />}
+      <section
+        ref={deployRef}
+        id="deploy"
+        className="scroll-mt-24"
+      >
+        <Deploy />
+      </section>
 
-      {activePage === "Roadmap" && <Roadmap />}
+      <section
+        ref={roadmapRef}
+        id="roadmap"
+        className="scroll-mt-24"
+      >
+        <Roadmap />
+      </section>
 
     </div>
   );

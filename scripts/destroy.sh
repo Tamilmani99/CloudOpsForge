@@ -3,7 +3,7 @@
 set -e
 
 echo "================================="
-echo " CloudOps Lite Infrastructure"
+echo " CloudOpsForge Infrastructure"
 echo " Cleanup"
 echo "================================="
 

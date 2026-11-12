@@ -34,7 +34,7 @@ export function Deploy() {
         </h1>
 
         <p className="mt-2 max-w-2xl text-sm leading-6 text-slate-500">
-          Manage the CloudOps Lite infrastructure deployment workflow
+          Manage the CloudOpsForge infrastructure deployment workflow
           using Terraform and AWS automation.
         </p>
       </div>
@@ -66,7 +66,7 @@ export function Deploy() {
               </h2>
 
               <p className="mt-2 max-w-xl text-sm leading-6 text-slate-500">
-                Deploy the CloudOps Lite infrastructure using the
+                Deploy the CloudOpsForge infrastructure using the
                 configured Terraform workflow.
               </p>
             </div>
@@ -192,7 +192,7 @@ export function Deploy() {
       </div>
 
       <p className="mt-8 text-center text-xs text-slate-400">
-        CloudOps Lite · Deployment workflow · Demo environment
+        CloudOpsForge · Deployment workflow · Demo environment
       </p>
 
     </main>

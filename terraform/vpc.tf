@@ -4,8 +4,8 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = true
 
   tags = {
-    Name    = "cloudops-lite-vpc"
-    Project = "CloudOps-Lite"
+    Name    = "cloudOps-forge-vpc"
+    Project = "CloudOps-Forge"
   }
 }
 
@@ -16,7 +16,7 @@ resource "aws_subnet" "public" {
   map_public_ip_on_launch = true
 
   tags = {
-    Name    = "cloudops-lite-public-subnet"
-    Project = "CloudOps-Lite"
+    Name    = "cloudOps-forge-public-subnet"
+    Project = "CloudOps-Forge"
   }
 }

@@ -1,9 +1,9 @@
 resource "aws_s3_bucket" "storage" {
-  bucket_prefix = "cloudops-lite-storage-"
+  bucket_prefix = "cloudOps-forge-storage-"
 
   tags = {
-    Name    = "cloudops-lite-storage"
-    Project = "CloudOps-Lite"
+    Name    = "cloudOps-forge-storage"
+    Project = "CloudOps-Forge"
   }
 }
 
