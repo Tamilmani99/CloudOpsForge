@@ -12,8 +12,6 @@ CloudOpsForge is a cloud operations platform designed to demonstrate AWS infrast
 
 ## Architecture
 
-![CloudOpsForge AWS Architecture](public/architecture.png)
-
 ```text
 Developer
     |
